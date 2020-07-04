@@ -1,0 +1,20 @@
+{
+  "name": "Eventosapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Isaac Costa Bandim",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^14.5.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev":"nodemon ./src/server.js"
+  }
+
+}
