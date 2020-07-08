@@ -1,16 +1,21 @@
 const express = require('express');
 const path = require('path');
 const consign = require('consign');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const expressSession = require('express-session')
 const app = express();
 
-//Middleware config 
-//var.set('key', value) -- First show directory view's and
-// the second is choose template engine
+
 
 app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs'); // Dinamic page HTML
 app.use(express.static(path.join(__dirname,'public')));
-
+app.use(cookieParser('side'));
+app.use(expressSession());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(express.static(path.join(__dirname, 'public')))
 
 consign({cwd:'src'})
 .include('models')

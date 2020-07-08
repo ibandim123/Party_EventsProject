@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <meta charset="utf-8">
-        <title> LOGIN | </title>
+        <title> LOGIN | Calourada </title>
     </head>
+    
     <body>
+        <style>
+            body{
+                font-size: 16px;
+                font-family: Roboto;
+                color: rgb(32, 32, 32);
+                margin: 10px;
+                background-color: rgb(230, 230, 230);
+            }
+            header{
+                position: absolute;
+                top: 20%;
+                left: 35%;
+                text-align: center;
+            }
+            section>form{
+                position: absolute;
+                top: 40%;
+                left: 41%;
+                text-align: justify;
+            }
+            form>input{
+            margin: 5x;
+               
+            }
+            form>button{
+            margin: 10px; 
+            }
+            footer{
+                position: absolute;
+                top:80%;
+                left: 42%;
+                text-align: center;
+            }
+        </style>
+        
         <header>
-            <h1>Petrolina Young Party!</h1>
+            <h1>Petrolina Young Party</h1>
             <h4>Bem-Vindo!</h4>
         </header>
-        <section>
+        <section class="row-fluid text-center">
             <form action="/entrar" method="POST">
-            <input type="text" name="usuario[nome]" placeholder="Nome">
+                <input type="text" name="usuario[nome]" class="form-control" placeholder="Nome">
             <br>
-            <input type="text" name="usuario[email]" placeholder="E-mail">
+                <input type="text" name="usuario[email]" class="form-control" placeholder="E-mail">
             <br>
-            <button type="submit">Entrar</button>
+                <button type="submit" class="btn btn-success">Entrar</button>
             </form>
         </section>
         <footer>
-            <small>Petrolina Calourada Party</small>
+            <small>@Petrolina Calourada Party</small>
         </footer>
     </body>
 </html>
