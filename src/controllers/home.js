@@ -8,7 +8,7 @@ module.exports = (app) =>{
             const { email, nome } = usuario;
             if (email && nome) {
                 usuario.contatos = [];// Dados serão armazenados aqui.
-                req.session.usuario = usuario;
+                req.session.usuario = usuario;//Dados do usuário
                 res.redirect('/contatos'); //Contatos salvos
             }else{
                 res.redirect('/');

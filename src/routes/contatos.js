@@ -1,12 +1,16 @@
+const autenticar = require('../middlewares/autenticador')
+
 //Rota para contatos.js
 module.exports = (app) => {
     const { contatos } = app.controllers;
-    app.get('/contatos', contatos.index)
-    app.get('/contato/:id', contatos.show) 
-    app.post('/contato/', contatos.create);
-    app.get('/contato/:id/editar', contatos.edit)
-    app.put('/contato/:id', contatos.update)
-    app.delete('/contato/:id',contatos.destroy)
+
+    app.get('/contatos', autenticar, contatos.index)
+    app.get('/contato/:id', autenticar, contatos.show) 
+    app.post('/contato/', autenticar, contatos.create);
+    app.get('/contato/:id/editar', autenticar, contatos.edit)
+    app.put('/contato/:id', autenticar, contatos.update)
+    app.delete('/contato/:id', autenticar, contatos.destroy)
 
 };
 
+//Inserir Callback's autenticar antes da principal rota.
