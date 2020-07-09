@@ -3,7 +3,8 @@ const path = require('path');
 const consign = require('consign');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const expressSession = require('express-session')
+const expressSession = require('express-session');
+const methodOverride = require('method-override');
 const app = express();
 
 
@@ -15,7 +16,9 @@ app.use(cookieParser('side'));
 app.use(expressSession());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 consign({cwd:'src'})
 .include('models')
