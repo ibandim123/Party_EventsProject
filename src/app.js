@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const expressSession = require('express-session');
 const methodOverride = require('method-override');
+const error = require('./middlewares/error');
 const app = express();
 
 
@@ -26,7 +27,9 @@ consign({cwd:'src'})
 .then('routes')
 .into(app)
 ;
-
+//middleware de tratamento de erros
+app.use(error.notFound);
+app.use(error.serverError);
 //Listen Door
 app.listen(3000, ()=>{
     console.log('App no ar!')
