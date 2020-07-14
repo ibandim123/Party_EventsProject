@@ -1,4 +1,45 @@
 <%- include ('../header') %>
+<style>
+            body{
+                font-size: 16px;
+                font-family: Roboto;
+                color: rgb(32, 32, 32);
+                margin: 10px;
+                background-color: rgb(230, 230, 230);
+            }
+            header{
+                position: absolute;
+                top: 20%;
+                left: 40%;
+                text-align: center;
+            }
+            tbody{
+              
+            }
+            section>form{
+                position: absolute;
+                top: 50%;
+                left: 35%;
+                text-align: justify;
+            }
+            form>input{
+            margin: 10x;
+               
+            }
+            form>button{
+            margin: 10px; 
+            }
+            table{
+                margin-top: 700px;
+            }
+            footer{
+                position: absolute;
+                top:80%;
+                left: 42%;
+                text-align: center;
+            }
+
+</style>
 <header>
     <h1>Petrolina Party</h1>
     <h4>Lista de Contatos</h4>
@@ -7,10 +48,10 @@
   <form action="/contato" method="POST">
     <input type="text" name="contato[nome]" placeholder="Nome">
     <input type="text" name="contato[email]" placeholder="E-mail">
-    <button type="submit">Cadastrar</button>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
 
   </form>
-  <table>
+  <table class="table table-striped">
       <thead>
       <tr>
           <th>Nome</th>
