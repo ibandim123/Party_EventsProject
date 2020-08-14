@@ -60,7 +60,7 @@
       </tr>
       </thead> 
       <tbody>
-          <% contatos.forEach((contato, index) =>{%>
+          <% contatos.forEach(function(contato, index) {%>
           <tr>
               <td><%- contato.nome %> </td>
               <td><%- contato.email %> </td>
@@ -73,5 +73,6 @@
       </tbody>
   </table>
 </section>
+<%- include ('./notify_script') %>
 <%- include ('../exit')%>
 <%- include ('../footer') %>
