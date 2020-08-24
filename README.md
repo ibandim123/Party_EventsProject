@@ -42,8 +42,8 @@ Nginx: servidor web de alta performance para arquivos
 estáticos
 
 ## 🚀 Features
-Website to sign up teachers and students.
-App to connect teachers and students.
+Website to sign up students.
+App to connect students!.
 👷 How to run
 ## Clone Repository
 $ git clone https://github.com/ibandim123/Party_EventsProject.git
