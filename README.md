@@ -1,7 +1,7 @@
 # Petrolina Party Chat
 
 
-
+## 🚧 Sorry, this project is not finished
 
 Isaac Costa GitHub last commit 
 
@@ -45,6 +45,7 @@ estáticos
 Website to sign up students.
 App to connect students!.
 👷 How to run
+
 ## Clone Repository
 $ git clone https://github.com/ibandim123/Party_EventsProject.git
 📦 Run API
@@ -79,7 +80,7 @@ $ yarn install or npm install
 $ yarn start or npm run start
 Go to http://localhost:3000/ to see the result.
 
-📱 
+
 
 ## Install Dependencies
 $ yarn install  or npm install
