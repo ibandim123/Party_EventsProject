@@ -15,12 +15,6 @@ Found a bug? Missing a specific feature?
 Contributing
 License
 
-## 📥 Figma layout available for download at:#
-
-Direct Download Direct Download
-
-Web Screenshot
- 
 ## 💻 Technologies #
 This project was made using the follow technologies:
 
